@@ -1,0 +1,98 @@
+<html>
+    <head>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var prevalue = ""; // always hold previous value before calculator operation
+        var preoper = ""; // always hold previous value before calculator operation
+        var preres = ""
+        function clr() {
+            //alert("calling clear");
+            prevalue = "";
+            preoper = "";
+            var res = document.getElementById("result"); // reading result object
+            res.value = ""; // concatinating with existing text
+        }        
+        function one() {
+            var res = document.getElementById("result"); // reading result object
+            res.value = res.value + "1"; // concatinating with existing text
+        }
+        function two() {
+            var res = document.getElementById("result");
+            res.value = res.value + "2";
+        }
+        function three() {
+            var res = document.getElementById("result"); // reading result object
+            res.value = res.value + "3"; // concatinating with existing text
+        }
+        function four() {
+            var res = document.getElementById("result");
+            res.value = res.value + "4";
+        }
+        function plus() {
+            var res = document.getElementById("result");
+            preoper = "+"
+            prevalue = res.value;
+            res.value = "";
+        }
+        function minu() {
+            var res = document.getElementById("result");
+            preoper = "-"
+            prevalue = res.value;
+            res.value = "";
+        }
+
+        function equal() {
+            var res = document.getElementById("result"); 
+            // reading result new value and prevalue have old value
+            //alert(prevalue);
+            //alert(preoper);
+            //alert(res.value);
+            if (preoper == "+")
+                res.value = parseInt(res.value) + parseInt(prevalue);
+            if (preoper == "-")
+                res.value = parseInt(prevalue) - parseInt(res.value);
+            
+            preoper = "";
+            prevalue = "";
+        }
+    </script>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" value="" id="result" style="text-align:right"/>
+                </td>
+  
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="1" id="one" onclick="one()">1</button>
+                </td>
+                <td>
+                    <button type="button" value="1" id="two" onclick="two()">2</button>
+                </td>
+                <td>
+                    <button type="button" value="1" id="three" onclick="three()">3</button>
+                </td>
+                <td>
+                    <button type="button" value="1" id="four" onclick="four()">4</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="+" id="add" onclick="plus()">+</button>
+                </td>
+                <td>
+                    <button type="button" value="-" id="minu" onclick="minu()">-</button>
+                </td>
+                <td>
+                    <button type="button" value="equal" id="equal" onclick="equal()">=</button>
+                </td>
+                <td>
+                    <button type="button" value="c" id="c" onclick="clr()">C</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0px;
+            }
+            .ttlh {
+                height: 20%;
+                background: #f0e68c;
+            }
+            .lnkh {
+                height: 5%;
+                background: #f0e68c;
+            }
+            .bdh {
+                height: 70%;
+                background: #f0e68c;
+            }
+            .bdrh {
+                height: 5%;
+                background: #f0e68c;
+            }
+            .hidden {
+                display: none;
+                height: 70%;
+                background: #f0e68c;
+            }
+            .nohidden {
+                display: inline;
+                height: 70%;
+                background: #f0e68c;
+            }
+        </style>
+        <script>
+            function swtchDiv(dvnm) {
+                dv = document.getElementById(dvnm);
+                //alert(dv.classList)
+                if(dv.id == "prdlst") {
+                    dv.classList.remove("hidden");
+                    dv.classList.add("bdh");
+                    dv.classList.add("nohidden");
+                    dv.innerHtml = '<object type="type/html" data="webform.html" ></object>';
+                    
+                    dv1 = document.getElementById("prddtl");
+                    dv1.classList.remove("nohidden");
+                    dv1.classList.add("hidden");
+                    
+                    alert(dv.classList)
+                }
+                if(dv.id == "prddtl") {
+                    dv.classList.remove("hidden");
+                    dv.classList.add("bdh");
+                    dv.classList.add("nohidden");
+                    dv.innerHtml = '<object type="type/html" data="sample.html" ></object>';
+                    dv1 = document.getElementById("prdlst");
+                    dv1.classList.remove("nohidden");
+                    dv1.classList.add("hidden");
+                    
+                    alert(dv.classList)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="ttlh">
+            <p>ABCD Company</p>
+        </div>
+        <div class="lnkh">
+            <a href="#" onclick="swtchDiv('prdlst')">link 1</a> 
+            <a href="#" onclick="swtchDiv('prddtl')">link 2</a>
+        </div>
+        <div id="prdlst" class="bdh" style="height:70%;">
+            <p> Content 1 </p>
+        </div>
+        <div id="prddtl" class="bdh hidden" style="height:70%;">
+            <p> Content 2 </p>
+        </div>
+        <div class="bdrh">
+            <p> @address </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,183 @@
+
+
+body{
+    
+    
+    font-family: sans-serif;
+    color: rgb(82, 80, 80);
+    
+}
+
+img{
+    width: 100px;
+    display: block;
+    margin-left: 21;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.login-form{
+    width:  350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: light rgb(97, 94, 94)
+}
+
+
+.bg-test{
+    background-image: linear-gradient( rgb(221, 220, 220), white, white, white, white, white);
+}
+h1 {
+font-size: 25px;
+margin-top: 20px;
+margin-left: 15px;
+}
+
+.top-text{
+margin-top: 20px;
+margin-left: 15px;
+padding-top: 0.5px;
+font-size: 15px;
+
+}
+
+.error-text{
+    font-size: 15px;
+    color: brown;
+    
+}
+.section{
+    border: solid;
+    border-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.user-input{
+    font-size: 10px;
+    width: 120%;
+    padding: 15px 10px;
+    background-color: rgba(240, 240, 240, 0.897);
+    border: none;
+    
+    border-top: 0.5px solid #c9c9c9;
+   
+    
+    
+
+    
+}
+
+.user-button {
+    font-size: 15px;
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 245px;
+    background-color: #1496e2;
+    color: aliceblue;
+    border: none;
+    
+    
+    
+}
+
+#footer {
+    margin-top: 750px;
+    font-size: 10px;
+    
+}
+
+.pphone{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+span {
+font-weight: bold;
+}
+
+hr{
+    color: rgb(196, 192, 192);
+}
+
+.line{
+    border-top: 2px solid rgb(185, 184, 184);
+}
+
+.line-top{
+    border-top: 2px solid rgb(185, 184, 184);
+    
+}
+
+.boot{
+    background-color: white;
+}
+
+#nameError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+#nameError.visible {
+    display: block;
+  }
+  
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: #000000;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }

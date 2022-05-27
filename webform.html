@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <form id="form">
+        <table class="center">
+            <tr>
+                <td colspan="3">
+                    Web form for user detail <br>
+                </td>
+            </tr>
+            <tr>
+                <td> <div class="tooltip">
+                    <label for="firstname"> First Name* </label> 
+                    <span class="tooltiptext">Given Name</span>
+                </div>
+                </td>
+                <td>
+                    <input type="text" name="firstname" id="firstname" onblur="validateFName()" onInput="enabled()"/>
+                </td>
+                <td> 
+                    <span id="error_fname" name="error_fname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <div class="tooltip">
+                    <label for="lastname"> Last Name* </label> 
+                    <span class="tooltiptext">Father Name</span>
+                </div>
+                </td>
+                <td>
+                    <input type="text" name="lastname" id="lastname" onblur="validateLName()" onInput="enabled()"/>
+                </td>
+                <td>
+                    <span id="error_lname" name="error_lname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <div class="tooltip">
+                    <label for="phone"> Phone* </label> 
+                    <span class="tooltiptext">Phone #</span>
+                </div>
+                </td>
+                <td>
+                    <input type="text" name="phone" id="phone" onblur="validatePhone()" onInput="enabled()"/>
+                </td>
+                <td>
+                    <span id="error_phone" name="error_phone"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button id="submit" disabled>Submit</button>
+                </td>
+            </tr>
+           
+        </table> 
+    </form>
+<script>
+// This function created for validating first name and this will get trigger while loosing the focus of first name input text box
+function validateFName(){
+    // reading value from first name
+    var fname = document.getElementById('firstname').value;
+    // reading error component
+    var errorFName = document.getElementById('error_fname');
+    // checking is it empty
+    if( fname == "" || fname == null ){
+        // setting error message and color
+        errorFName.innerText = "Please Provide Your Full Name";
+        errorFName.style.color = "#ff0000";
+        return false;
+    }else{
+        // remove error message when it's not empty
+        errorFName.innerHTML = '';
+    }
+    return true;
+};
+    
+function validateLName(){
+    var lname = document.getElementById('lastname').value;
+    var errorLName = document.getElementById('error_lname');
+    if( lname == "" || lname == null ){
+        errorLName.innerText = "Please Provide Your Last Name";
+        errorLName.style.color = "#ff0000";
+        return false;
+    }else{
+        errorLName.innerHTML = '';
+    }
+    return true;
+};
+function validatePhone(){
+    var lname = document.getElementById('phone').value;
+    var errorLName = document.getElementById('error_phone');
+    if( lname == "" || lname == null ){
+        errorLName.innerText = "Please Provide Your Phone Number";
+        errorLName.style.color = "#ff0000";
+        return false;
+    }else{
+        errorLName.innerHTML = '';
+    }
+    return true;
+};
+
+function enabled() {
+
+    fn=document.getElementById("firstname");
+    ln=document.getElementById("lastname");
+    ph=document.getElementById("phone");
+
+    btn=document.getElementById("submit");
+
+    if(fn.value.length <=0 || ln.value.length <=0 || ph.value.length <=0)
+        btn.disabled = true;
+    else
+        btn.disabled = false;
+}
+
+</script>
+</body>
+  
+</html>

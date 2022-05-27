@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+.hidden {
+    display: none;
+ }
+.nohidden {
+    display: block;
+}
+</style>
+<script>
+  function swtchDiv(dvnm) {
+      dv = document.getElementById(dvnm);
+      dv.classList.remove("hidden");
+      dv.classList.add("nohidden");
+   
+      //alert(dv.classList)
+      if(dv.id == "usrdtl") { // usrdtl, 
+          dv1 = document.getElementById("cwdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("fddtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("mlkdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("expdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("dctdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+  
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+    //alert(dv.classList)
+    if(dv.id == "cwdtl") { // usrdtl, cwdtl, fddtl, mlkdtl, expdtl
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("fddtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("mlkdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("expdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("dctdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+  
+          dv1 = document.getElementById("cwdtl"); 
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+
+     //alert(dv.classList)
+     if(dv.id == "fddtl") { // fddtl, mlkdtl, expdtl
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("cwdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("mlkdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("expdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("dctdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+  
+          dv1 = document.getElementById("fddtl");  
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+
+         //alert(dv.classList)
+     if(dv.id == "mlkdtl") { // , , expdtl
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("cwdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("fddtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("expdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("dctdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+  
+          dv1 = document.getElementById("mlkdtl");   
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+
+           //alert(dv.classList)
+      if(dv.id == "expdtl") { // , , expdtl
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("cwdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("fddtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("mlkdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("dctdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+  
+          dv1 = document.getElementById("expdtl");    
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+
+    
+           //alert(dv.classList)
+      if(dv.id == "dctdtl") { // , , expdtl
+          dv1 = document.getElementById("usrdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("cwdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("fddtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("mlkdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden");
+
+          dv1 = document.getElementById("expdtl");
+          dv1.classList.add("disabled");
+          dv1.classList.add("hidden"); 
+          dv1.classList.remove("nohidden"); 
+
+          dv1 = document.getElementById("dctdtl");     
+          dv1.classList.remove("hidden");
+          dv1.classList.remove("disabled");
+          dv1.classList.add("nohidden"); // add hide
+
+      }
+
+  }
+</script>
+</head>
+<body>
+
+<div class="container-fluid p-3 bg-primary text-white text-center">
+  <h1>SP Farming Inc</h1>
+  <p>This is integrated farming place</p> 
+</div>
+
+<div class="container-fluid mt-1">
+  <div class="row">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('usrdtl')" id="usrdtllnk">User List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('cwdtl')" id="cwdtllnk">Cow List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('fddtl')" id="fddtllnk">Feed Detail</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('mlkdtl')" id="mlkdtllnk">Milking Detail</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('expdtl')" id="expdtlllnk">Expense List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="swtchDiv('dctdtl')" id="dctdtllnk">Doctor Visit</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid mt-1 hidden" id="usrdtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">User ID</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="container-fluid mt-1 hidden" id="cwdtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Cow Id</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Breed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-fluid mt-1 hidden" id="fddtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Type</th>
+          <th scope="col">Date</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-fluid mt-1 hidden" id="mlkdtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-fluid mt-1 hidden" id="expdtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date</th>
+          <th scope="col">Type</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="container-fluid mt-1 hidden" id="dctdtl">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date</th>
+          <th scope="col">Doctor Name</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Apple</td>
+          <td>iPhone</td>
+          <td>asdfa asfd</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Samsung</td>
+          <td>Samsung 11</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>OnePlus</td>
+          <td>OnePlus X</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>VIVO</td>
+          <td>VIVO PL</td>
+          <td>sdfasd asdfa</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+</body>
+</html>
